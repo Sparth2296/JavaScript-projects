@@ -43,7 +43,7 @@ let nextBtn = document.getElementById("next-button");
       
       imgContainer.style.animation = "slide-out-left 0.5s ease-in-out forwards";
       textContainer.style.animation = "slide-out-right 0.5s ease-in-out forwards";
-      body.style.background = `url('${quotes[count].back}')`;
+      body.style.backgroundImage = `url('${quotes[count].back}')`;
       
 
       setTimeout(() => {

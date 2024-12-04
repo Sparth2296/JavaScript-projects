@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class Banck{
+        constructor(name,BanckName,account,Branch,Ifsc,belance,withdrow){
+            this.name = name
+            this.BanckName = BanckName
+            this.accountNumber = account
+            this.Branch = Branch
+            this.IFSC = Ifsc
+            this.belance = belance
+            this.withdrow = withdrow
+        }
+
+        nameMethod(){
+            console.log(
+                `Your Name is ${this.name}
+                Your Account Name is : ${this.BanckName}`);
+        }
+
+        history(){
+            console.log(
+                `Your WithDrowe History : ${this.withdrow}`
+            );  
+        }
+
+        allDtl(){
+            console.log(
+                `Name : ${this.name}
+                Banck : ${this.BanckName}
+                Branch Name : ${this.Branch}
+                IFSC : ${this.IFSC}
+                Belance : ${this.belance}`
+            );
+        }
+        total(){
+            console.log(`Balence : ${this.belance}`); 
+        }
+    }
+
+    let ram = new Banck("Ram","SBI","99294033201","AMRELI","AMR007",9580032215141,["Date : 30/11/2024 : 92,020","Date : 01/12/2024 : 200,000","Date : 02/12/2024 : 100,000","Date : 03/12/2024 : 102000"]) 
+
+    ram.allDtl()
+
+    ram.history()
+
+    ram.total()
+
+    ram.nameMethod()
+</script>
+</html>
