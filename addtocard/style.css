@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  text-decoration: none;
+}
+body {
+  background-color: #ffffff;
+}
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  width: 100%;
+  height: 75px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  padding: 0px 40px;
+  box-shadow: 0 1px 4px 0px gray;
+}
+nav h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #534a4a;
+}
+.searchbar {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.searchbar button {
+  display: inline-block;
+  height: 35px;
+  width: 130px;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #383333;
+  cursor: pointer;
+  outline: none;
+}
+.searchbar button:hover {
+  height: 35px;
+  width: 130px;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #383333;
+  cursor: pointer;
+  outline: none;
+}
+.searchbar input {
+  width: 330px;
+  text-transform: uppercase;
+  height: 35px;
+  border: none;
+  outline: none;
+  padding: 0px 15px;
+  font-size: 1.2rem;
+  background-color: rgb(234, 234, 234);
+}
+.blank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.count {
+  width: auto;
+  height: 50px;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  background-color: #000000;
+  align-items: center;
+  padding: 0px 10px;
+}
+#count {
+  color: white;
+}
+.count p {
+  padding: 10px;
+  color: rgb(0, 0, 0);
+}
+.container-of-cart {
+  width: 95%;
+  margin: 1rem auto;
+  padding: 10px 20px;
+  transition: all 0.5s ease;
+}
+.container-of-cart p {
+  color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  font-size: 2rem;
+  padding: 6.5% 25px;
+  margin: 0 25px;
+  display: inline;
+  text-align: center;
+}
+.heading-cart {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+}
+.cart-wrapper {
+  width: auto;
+  margin: 10px auto;
+}
+.line-of-card {
+  width: 80%;
+  height: 200px;
+  margin: 80px auto;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  box-shadow: 0 1px 10px 0px rgb(212, 212, 212);
+}
+.fa-solid {
+  padding: 0 50px;
+  display: flex;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  align-items: center;
+}
+.cart-img {
+  width: 130px;
+  height: 80%;
+  margin: 10px 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cart-img img {
+  width: 100%;
+  height: 100%;
+}
+.cart-intro {
+  color: rgb(0, 0, 0);
+}
+.cart-intro {
+  width: 400px;
+  margin: 50px 0px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.del-cart {
+  margin: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+}
+.del-cart i {
+  background-color: #6babc6;
+  padding: 10px 35px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.del-cart button {
+  display: inline-block;
+  height: 50px;
+  width: 176px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #6babc6;
+  cursor: pointer;
+  outline: none;
+}
+.wrapper {
+  height: auto;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px auto;
+  overflow: hidden;
+  align-items: center;
+}
+
+.card-product {
+  width: 656px;
+  height: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 50px auto;
+  box-shadow: 0px 0px 15px 0px rgb(190, 190, 190);
+}
+
+.product-img {
+  float: left;
+  height: 450px;
+  width: 327px;
+}
+
+.product-img img {
+  border-radius: 7px 0 0 7px;
+  height: 100%;
+  width: 100%;
+}
+.clode {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 280px;
+  margin-top: 15px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+.product-info {
+  float: left;
+  height: 450px;
+  width: 327px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+
+.product-text {
+  height: 300px;
+  width: 327px;
+}
+
+.product-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 52px;
+  font-size: 34px;
+  color: #474747;
+}
+
+.product-text h1,
+.product-price-btn p {
+  font-family: "Bentham", serif;
+}
+
+.product-text h2 {
+  margin: 0 0 47px 38px;
+  font-size: 13px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d2d2d2;
+  letter-spacing: 0.2em;
+}
+
+.product-text p {
+  height: 125px;
+  margin: 0 0 0 38px;
+  font-family: "Playfair Display", serif;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.product-price-btn {
+  height: 103px;
+  width: 327px;
+  margin-top: 17px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.product-price-btn p {
+  display: inline-block;
+  position: absolute;
+  top: -13px;
+  height: 50px;
+  font-family: "Trocchi", serif;
+  margin: 0 0 0 38px;
+  font-size: 28px;
+  font-weight: lighter;
+  color: #474747;
+}
+span {
+  font-family: "Suranna", serif;
+  font-size: 34px;
+}
+
+.product-price-btn button {
+  position: relative;
+  left: 80px;
+  display: inline-block;
+  height: 50px;
+  width: 176px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #9cebd5;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-price-btn button:hover {
+  background-color: #79b0a1;
+}
