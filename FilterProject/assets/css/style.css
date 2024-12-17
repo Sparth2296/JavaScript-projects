@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    text-decoration: none;
+    list-style: none;
+}
+#body{
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+header{
+    width: 100%;
+    background-color: transparent;
+    height: 70px;
+}
+nav{
+    width: 100%;
+    margin: 0 auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 0px 10px 0px rgb(186, 186, 186);
+}
+nav img{
+    height: 100%;
+}
+.search{
+    display: flex;
+    justify-content: space-around;
+    width: auto
+}
+.search input {
+    width: 200px;
+    padding: 0px 20px;
+    height: 30px;
+    border-radius: 8px 0px 0px 8px;
+    outline: none;
+    font-size: 1.02365rem;
+    border-right: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.searchbtn{
+    width: 95px;
+    font-size: 1.02365rem;
+}
+
+.mo-search{
+    display: block;
+    width: 50px;
+    font-size: 1.03654;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-left: none;
+    outline: none;
+    border-radius: 0px 8px 8px 0px;
+}
+ul{
+    width: 250px;
+    height: 70px;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+}
+ a i{
+    font-size: 1.1rem;
+}
+.fa-list{
+    display: none;
+}
+.manuOfDevice{
+    width: 80%;
+    height: 70px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#iphonebtn,#ipadbtn,#iWatchbtn,#MacBookbtn{
+    width: 100px;
+    height: 35px;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: rgb(47, 112, 243);
+    transition: all 0.3s ease;
+}
+
+#iphonebtn:hover,#ipadbtn:hover,#iWatchbtn:hover,#MacBookbtn:hover{
+    cursor: pointer;
+}
+.container,.productResults{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0px auto;
+}
+.card-main{
+    width: 310px;
+    height: 430px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px auto;
+    transition: all 0.3s ease;
+    box-shadow: rgba(33, 33, 60, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.card-main:hover{
+    transform: translatey(-10px);
+    transition: all 0.3s ease;
+}
+.image-box{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.like-icon img{
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease;
+}
+
+.like-icon{
+    width: 95%;
+    height: 24px;
+    display: flex;
+    justify-content: end;
+}
+.main-image{
+    height: 180px;
+    overflow: hidden;
+}
+.card-intro{
+    width: 100%;
+    height: 190px;
+    padding: 10px;
+    margin: 5px 0px;
+}
+del{
+    text-decoration: line-through;
+}
+.card-intro-top {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+.product-name{
+    font-size: 1rem;
+    color: black; 
+}
+.dtl-box{
+    display: flex;
+}
+.product-reating{
+    color: gold;
+    font-size: 1.01rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.reviwe-box{
+    color: rgb(46, 45, 45);
+}
+.reviwe-box span{
+    margin-left: 5px;
+}
+.reviwe-box i{
+    margin-left: 15px;
+}
+.card-intro-bottom{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dis{
+    display: flex;
+}
+.discount-box{
+    padding: 5px 2px;
+}
+.discount-pr{
+    background-color: rgb(213, 235, 254);
+    margin-left: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: blue;
+}
+.price-box{
+    margin-top: 1px;
+}
+.buy-btn{
+    width: 60px;
+    height: 50px;
+    background-color: rgb(47, 112, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+@media (max-width:769px) {
+    ul{
+        display: none;
+    }
+    .search input{
+        width: 150px;
+        border-right: none;
+        border-radius: 8px 0px 0px 8px ;
+    }
+    .mo-search{
+        display: block;
+        width: 40px;
+        border-left: none;
+        outline: none;
+        border-radius: 0px 8px 8px 0px;
+    }
+    .fa-list{
+        display: block;
+    }
+    .manuOfDevice{
+        width: 95%;
+        height: 50px;
+        margin: 10px auto;
+        flex-wrap: wrap;
+    }
+    #iphonebtn,#ipadbtn,#iWatchbtn,#MacBookbtn{
+        width: 110px;
+        height: 30px;
+        font-size: 0.8rem;
+        margin-top: 10px
+       
+    }
+    
+}
