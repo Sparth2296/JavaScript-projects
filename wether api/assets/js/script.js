@@ -82,7 +82,7 @@ async function wetherupdet() {
         let final = await res.json();
 
         console.log(final);
-
+        
         console.log(final.weather[0].icon);
         
 

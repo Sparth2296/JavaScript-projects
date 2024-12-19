@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid /#000000; */
+    font-family: "myfont";
+    color: #3D3BF3;
+}
+body{
+    height: 100vh;
+    background-color: #EBEAFF;
+}
+@font-face {
+    font-family: "myfont";
+    src: url(../font/Oswald-Regular.ttf);
+}
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: #9694FF;
+    justify-content: center;
+    align-items: center;
+}
+.searchbar{
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.userinput{
+    width: 200px;
+    height: 45px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 1.5;
+    
+}
+.search{
+    width: 60px;
+    height: 45px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    font-size: 1.2rem;
+}
+.container{
+    width: 1000px;
+    height: 600px;
+    margin: 10px auto;
+    /* gap: 6%; */
+}
+.card{
+    width: 450px;
+    height: 450px ;
+    display: flex;
+    align-items: center;
+}
+
+.corona-data-box{
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.satatName{
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+.map-dtl-box{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+.head-of-data{
+   width: 100%;
+   font-size: 2.5rem;
+}
+.case-dtl{
+    width: 100%;
+    font-size: 1.5rem;
+}
+.satatName{
+    margin-bottom: 60px;
+}
+.foreing-case-box,.indian-case,.death-case,.discharge-case,.total-case{
+    display: flex;
+    gap: 2%;
+}
